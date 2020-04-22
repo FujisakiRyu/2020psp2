@@ -3,16 +3,20 @@
 #include <string.h>
 #include <math.h>
 
-extern double ave_online(double val,double ave)
-extern double var_online()
+extern double ave_online(double val,double ave,int a)
+{return((a-1)*ave)/a+val/a;}
+extern double var_online(double val,double ave,double square_ave,int a)
+{return(((a-1)*square_ave/a)+pow(val,2)/a-pow(((a-1)*ave/a)+val/a,2));
+}
 
 int main(void)
 {
-    double val;
+    double val,ave,var,square_ave;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
-
+    int a;
+    a=0;
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
     fname[strlen(fname)-1] = '\0';
@@ -39,6 +43,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
+printf("ave=%1f",ave);
+printf("var=%1f",var);
 
     return 0;
 
