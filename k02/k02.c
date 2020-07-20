@@ -49,11 +49,11 @@ int main(void)
     x2=p_stdnorm(z2);
     max_val=max_val*x1;
     min_val=min_val*x2;
+    
+
+
     }
-
-
-
-    }
+    
 
     if(fclose(fp) == EOF){
         fputs("file close error\n",stderr);
