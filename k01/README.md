@@ -42,20 +42,32 @@ aa83988848 薗田光太郎
 |母集団分散|<img src="/k01/tex/35ae058b877f36e7384685a2e19cb7e4.svg?invert_in_darkmode&sanitize=true" align=middle width=37.44306224999999pt height=21.18721440000001pt/>|
 
 ## ソースコードの説明
+ 
+ 8 標本の平均を求める関数
 
-あいうえお
+ 13　標本の分散を求める関数
+
+ 41　43　関数を用いて平均と分散を求める
+
+ 45　46　標本の二乗の平均と標本平均を求める
+
+ 56　母集団の分散を求める
+
+ 57　母集団の平均を求める
+
+ 63　標準誤差を求める
+
 
 ## 入出力結果
 
 ```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
+sample mean：173.888750
+sample variance：25.361711
+population mean (estimated)：173.888750  pm=1.903445
+population variance (estimated)：28.984813
 ```
 
 ## 修正履歴
 
-説明は「かきくけこ」だ！
