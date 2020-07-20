@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -79,7 +80,7 @@ if(nodata==14)
     printf("NO data");
 }
 
-if(fclose(fp1)==E0F)
+if(fclose(fp1)==EOF)
 {
     fputs("file close error\n",stderr);
     exit(EXIT_FAILURE);
