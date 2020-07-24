@@ -36,6 +36,8 @@ if(fp1==NULL)
 
 i=0;
 
+fp2=fopen(fname2,"r");
+
 while(fgets(buf,sizeof(buf),fp1)!=NULL)
 {
     sscanf(buf,"%d,%lf",&gender,&heights);
