@@ -71,3 +71,5 @@ population variance (estimated)：28.984813
 
 ## 修正履歴
 
+[comment0725宮下]
+課題提出お疲れさまでした！修正点はありません。k01完了です。
