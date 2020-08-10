@@ -34,6 +34,7 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
+    i=0;
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
         i++;

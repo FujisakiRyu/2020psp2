@@ -17,7 +17,7 @@ extern double p_stdnorm(double z);
 int main(void)
 {
     int i;
-    double val,z1,z2,u1,u2,y1,y2,x1,x2,max_val=1,min_val=1;
+    double val,z1,z2,u1,u2,y1,y2,x1,x2,YUDO_A=1,YUDO_B=1;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
@@ -47,8 +47,8 @@ int main(void)
     z2=(val-u2)/y2;
     x1=p_stdnorm(z1);
     x2=p_stdnorm(z2);
-    max_val=max_val*x1;
-    min_val=min_val*x2;
+    YUDO_A=YUDO_A*x1;
+    YUDO_B=YUDO_B*x2;
     
 
 
@@ -60,8 +60,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %f\n",max_val);
-    printf("L_B: %f\n",min_val);
+    printf("L_A: %f\n",YUDO_A);
+    printf("L_B: %f\n",YUDO_B);
 
     return 0;
 

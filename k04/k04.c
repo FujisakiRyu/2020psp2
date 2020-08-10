@@ -9,7 +9,7 @@ struct FILE_DATA{
     double heights;
     double ID;
 }
-data[14];
+data[15];
 
 int main(void)
 {
