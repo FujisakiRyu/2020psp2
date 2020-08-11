@@ -43,3 +43,6 @@ Likelihood for B：0.000002
 
 [comment #20200804 sonoda]
 - max_valやmin_valは，元になったソースコードがそうだったのかもしれませんが，この課題では最大値や最小値は関係ないので，相応の名前にしてください．
+
+[comment #20200811 sonoda]
+- OK.
